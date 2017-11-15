@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Mint - Add Question</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-rtl.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- custom styles  -->
+    <link href="css/style-rtl.css" rel="stylesheet">
+    <link href="css/responsive-rtl.css" rel="stylesheet">
+
+    <link href="skins/all.css?v=1.0.2" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="menu-wrap">
+    <div class="user-info">
+      <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+      <h2>Jhone Doe</h2>
+      <span>heyfromjonathan@gmail.com</span>
+    </div>
+    <nav>
+        <a class="clearfix" href="#"><i class="material-icons">dashboard</i><span>لوحة التحكم</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">account_circle</i><span>الصفحة الشخصية</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">settings</i><span>الاعدادت</span></a>
+        <a class="clearfix" href="#"><i class="material-icons mint-logo"></i><span>عن مينت</span></a>
+        <a class="clearfix logout" href="#"><i class="material-icons">&#xE5DD;</i><span>تسجيل الخروج</span></a>
+    </nav>
+  </div>
+
+  <div class="content-wrap">
+
+    <header class="extend">
+
+        <a class="icon-logo icon-sprite" href="#"></a>
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-6 col-sm-6">
+              <button class="menu-button" id="open-button">Open Menu</button>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+
+              <div class="btn-group">
+
+                  <a href="#" id="userDropDown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                    <span>Omar Aly</span>
+                    <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                  </a>
+
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">
+                        تسجيل الخروج
+                        <i class="exit-icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                <hr>
+              </div>
+          </div>
+
+          <div class="row inner-header">
+
+            <div class="col-lg-6 col-sm-4">
+              <a class="back" href="#"><i class="material-icons">clear</i></a>
+              <h2>اضافة سؤال جديد</h2>
+            </div>
+
+            <div class="col-lg-6 col-sm-8">
+            </div>
+
+          </div>
+
+        </div>
+
+    </header>
+
+    <div id="addQuestion" class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12 pull-lg-3 pull-md-1 pull-sm-0 pull-xs-0">
+
+          <form id="addQuestionForm" class="ac-custom ac-checkbox ac-checkmark">
+
+                <div class="form-fields">
+
+                  <div class="md-form">
+
+                    <div class="md-select">
+                        <label for="select-categories">Question type</label>
+                        <select id="select-categories" class="select">
+                            <option value="">True</option>
+                            <option value="option1">option1</option>
+                            <option value="option2">option2</option>
+                            <option value="option3">option3</option>
+                            <option value="option4">option4</option>
+                        </select>
+                    </div>
+
+                  </div>
+
+                  <div class="md-form">
+
+                    <div class="md-select">
+                        <label for="select-categories">Question level</label>
+                        <select id="select-categories" class="select">
+                            <option value="">Medium</option>
+                            <option value="option1">option1</option>
+                            <option value="option2">option2</option>
+                            <option value="option3">option3</option>
+                            <option value="option4">option4</option>
+                        </select>
+                    </div>
+
+                  </div>
+
+                  <div class="md-form">
+
+                    <div class="md-select">
+                        <label for="select-categories">Language Skill</label>
+                        <select id="select-categories" class="select">
+                            <option value="">Not Applicable</option>
+                            <option value="option1">option1</option>
+                            <option value="option2">option2</option>
+                            <option value="option3">option3</option>
+                            <option value="option4">option4</option>
+                        </select>
+                    </div>
+
+                  </div>
+
+                  <div class="md-form md-upload">
+                    <div class="file-upload">
+                      <label for="uploadQuestion">عنوان سؤال</label>
+                      <div class="image-upload-wrap">
+                        <input id="uploadQuestion" class="file-upload-input" type='file' onchange="readURL(this);" accept="file_extension|audio/*|video/*|image/*|media_type"/>
+                        <div class="drag-text">
+                          <h3>انقر هنا لإضافة محتوي</h3>
+                        </div>
+                      </div>
+                      <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+                          <button type="button" onclick="removeUpload()" class="remove-image"><span class="image-title">Uploaded Image</span>ازالة المحتوي<i class="material-icons">clear</i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="md-form">
+                    <label for="discussion-subject">موضوع السؤال</label>
+                    <textarea type="text" id="discussion-subject" class="md-textarea form-control"></textarea>
+                  </div>
+
+                  <div class="check-radio clear">
+                    <ul>
+                      <li>
+                        <input tabindex="1" type="checkbox" id="input-1">
+                        <label for="input-1">Checkbox, <span>#input-1</span></label>
+                        <i class="material-icons">clear</i>
+                      </li>
+                      <li>
+                        <input tabindex="2" type="checkbox" id="input-2">
+                        <label for="input-2">Checkbox, <span>#input-2</span></label>
+                        <i class="material-icons">clear</i>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <input tabindex="3" type="radio" id="input-3" name="demo-radio">
+                        <label for="input-3">Radio button, <span>#input-3</span></label>
+                        <i class="material-icons">clear</i>
+                      </li>
+                      <li>
+                        <input tabindex="4" type="radio" id="input-4" name="demo-radio">
+                        <label for="input-4">Radio button, <span>#input-4</span></label>
+                        <i class="material-icons">clear</i>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+                <div class="form-button">
+                  <button class="btn btn-default" type="submit">تحميل</button>
+                </div>
+
+              </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer>
+
+      <div class="row">
+
+          <div class="col-lg-6">
+            <p class="float-lg-right">
+              Copyright © 2016
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="icon-logo-footer icon-sprite" href="#"></a>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <!-- footer -->
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  `<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>`
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- form validation -->
+  <script src="js/attrvalidate.jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    // $(document).ready(function(){
+    //   $('#adddiscussForm').attrvalidate();
+    //   $('#resetBtn').click(function(){ $('#adddiscussForm').attrvalidate('reset'); });
+    //
+    //   $('#expandBtn').click(function(){
+    //     var collapsible = $('#' + $(this).attr('aria-controls'));
+    //     $(collapsible).attr('aria-hidden', ($(collapsible).attr('aria-hidden') === 'false'));
+    //     $(this).attr('aria-expanded', ($(this).attr('aria-expanded') === 'false'));
+    //   });
+    // });
+  </script>
+
+  <!-- select -->
+  <script src="js/select.js"></script>
+
+  <!-- upload image -->
+  <script src="js/image-upload.js"></script>
+
+  <!-- menu -->
+  <script src="js/classie.js"></script>
+  <script src="js/menu.js"></script>
+
+  <!-- checkbox -->
+  <script src="js/icheck.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    var callbacks_list = $('.demo-callbacks ul');
+    $('.check-radio input').on('ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed', function(event){
+      callbacks_list.prepend('<li><span>#' + this.id + '</span> is ' + event.type.replace('if', '').toLowerCase() + '</li>');
+    }).iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%'
+    });
+  });
+  </script>
+
+</body>
+
+</html>

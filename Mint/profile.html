@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Mint - Profile</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-rtl.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- custom styles  -->
+    <link href="css/style-rtl.css" rel="stylesheet">
+    <link href="css/responsive-rtl.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="menu-wrap">
+    <div class="user-info">
+      <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+      <h2>Jhone Doe</h2>
+      <span>heyfromjonathan@gmail.com</span>
+    </div>
+    <nav>
+        <a class="clearfix" href="#"><i class="material-icons">dashboard</i><span>لوحة التحكم</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">account_circle</i><span>الصفحة الشخصية</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">settings</i><span>الاعدادت</span></a>
+        <a class="clearfix" href="#"><i class="material-icons mint-logo"></i><span>عن مينت</span></a>
+        <a class="clearfix logout" href="#"><i class="material-icons">&#xE5DD;</i><span>تسجيل الخروج</span></a>
+    </nav>
+  </div>
+
+  <div class="content-wrap">
+
+    <!-- header -->
+    <header>
+
+      <a class="icon-logo icon-sprite" href="#"></a>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="menu-button" id="open-button">Open Menu</button>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+
+            <div class="btn-group">
+
+                <a href="#" id="userDropDown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <span>Omar Aly</span>
+                  <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      تسجيل الخروج
+                      <i class="exit-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+              <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+
+              <div class="profile-picture">
+                <div class="circle">
+                  <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="profile-pic img-responsive">
+                </div>
+                <div class="p-image">
+                  <i class="material-icons upload-button">mode_edit</i>
+                  <input class="file-upload" type="file" accept="image/*"/>
+                </div>
+              </div>
+
+              <div class="profile-info">
+                <h1>عمر علي</h1>
+                <div class="clearfix">
+                  <span>@UserName</span>
+                  <span>مدرس</span>
+                  <span>١٢ الف متابع</span>
+                </div>
+              </div>
+
+              <div class="status">
+
+                  <div class="comment-block clearfix">
+                    <p class="text">
+                      هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.
+                    </p>
+                    <textarea rows="2" wrap="hard" class="editable"></textarea>
+                    <a class="save" href="#">حفظ</a>
+                    <a class="edit" href="#">تغير الحالة</a>
+
+                  </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+          <!-- tabs -->
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+              <div class="tabs-wrapper">
+                  <ul class="nav classic-tabs tabs-cyan" role="tablist">
+                      <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#panel51" role="tab">المساحات</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#panel52" role="tab">معلومات</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#panel53" role="tab">المجتمع</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+    <!-- end header -->
+
+    <div class="spaces">
+      <div class="container">
+        <div class="row">
+
+          <!-- Tab panels -->
+          <div class="tab-content equalheightContainer">
+
+              <!--tab 1-->
+              <div class="tab-pane fade in active" id="panel51" role="tabpanel">
+
+                <div class="col-lg-3 col-sm-6">
+
+                    <!--Card-->
+                    <div class="card testimonial-card equal-height">
+
+                      <!-- dropdown -->
+                      <div class="dropdown">
+
+                          <!--Trigger-->
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                          <!--Menu-->
+                          <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                              <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                              <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                          </div>
+
+                      </div>
+
+                      <!-- add to favourite -->
+                      <a class="fav" href="#"><i data-toggle="tooltip" data-placement="top" title="Omar Ali">add</i></a>
+
+                        <!--Avatar-->
+                        <div class="avatar">
+                          <a href="#">
+                            <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                          </a>
+                          <i class="owner"></i>
+                        </div>
+
+                        <div class="card-block">
+                            <!--Name-->
+                            <h3 class="card-title">
+                              <a href="#">الفزياء المبسطة</a>
+                            </h3>
+                            <h4>الموسيقي</h4>
+                            <!--Quotation-->
+                            <a href="#" class="btn btn-default">عرض المساحة</a>
+                        </div>
+
+                        <!-- card footer -->
+                        <div class="card-footer">
+
+                          <div class="space-owner">
+                            <img src="img/user.jpg" alt="" />
+                            <div>
+                              <span>إنشئ بواسطة</span>
+                              <h3>Vincent Sims</h3>
+                            </div>
+                          </div>
+
+                          <div class="space-followers">
+                            <ul>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Omar Ali"/></li>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Khaled Yosry"/></li>
+                            </ul>
+                            <span>١١+</span>
+                          </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+
+                    <!--Card-->
+                    <div class="card testimonial-card equal-height">
+
+                      <!-- dropdown -->
+                      <div class="dropdown">
+
+                          <!--Trigger-->
+                          <button class="btn btn-default dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                          <!--Menu-->
+                          <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                              <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                              <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                          </div>
+
+                      </div>
+
+                      <!-- add to favourite -->
+                      <a class="fav" href="#"><i >add</i></a>
+
+                        <!--Avatar-->
+                        <div class="avatar">
+                          <a href="#">
+                            <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                          </a>
+                          <i class="follower"></i>
+                        </div>
+
+                        <div class="card-block">
+                            <!--Name-->
+                            <h3 class="card-title">
+                              <a href="#">الفزياء المبسطة</a>
+                            </h3>
+                            <h4>الموسيقي</h4>
+                            <!--Quotation-->
+                            <a href="#" class="btn btn-default">عرض المساحة</a>
+                        </div>
+
+                        <!-- card footer -->
+                        <div class="card-footer">
+
+                          <div class="space-owner">
+                            <img src="img/user.jpg" alt="" />
+                            <div>
+                              <span>إنشئ بواسطة</span>
+                              <h3>Vincent Sims</h3>
+                            </div>
+                          </div>
+
+                          <div class="space-followers">
+                            <ul>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Omar Ali"/></li>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Khaled Yosry"/></li>
+                            </ul>
+                            <span>١١+</span>
+                          </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+
+                    <!--Card-->
+                    <div class="card testimonial-card equal-height">
+
+                      <!-- dropdown -->
+                      <div class="dropdown">
+
+                          <!--Trigger-->
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                          <!--Menu-->
+                          <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                              <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                              <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                          </div>
+
+                      </div>
+
+                      <!-- add to favourite -->
+                      <a class="fav" href="#"><i >add</i></a>
+
+                        <!--Avatar-->
+                        <div class="avatar">
+                          <a href="#">
+                            <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                          </a>
+                          <i class="owner"></i>
+                        </div>
+
+                        <div class="card-block">
+                            <!--Name-->
+                            <h3 class="card-title">
+                              <a href="#">الفزياء المبسطة</a>
+                            </h3>
+                            <h4>الموسيقي</h4>
+                            <!--Quotation-->
+                            <a href="#" class="btn btn-default">عرض المساحة</a>
+                        </div>
+
+                        <!-- card footer -->
+                        <div class="card-footer">
+
+                          <div class="space-owner">
+                            <img src="img/user.jpg" alt="" />
+                            <div>
+                              <span>إنشئ بواسطة</span>
+                              <h3>Vincent Sims</h3>
+                            </div>
+                          </div>
+
+                          <div class="space-followers">
+                            <ul>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Omar Ali"/></li>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Khaled Yosry"/></li>
+                            </ul>
+                            <span>١١+</span>
+                          </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+
+                    <!--Card-->
+                    <div class="card testimonial-card equal-height">
+
+                      <!-- dropdown -->
+                      <div class="dropdown">
+
+                          <!--Trigger-->
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+                          <!--Menu-->
+                          <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                              <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                              <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                          </div>
+
+                      </div>
+
+                      <!-- add to favourite -->
+                      <a class="fav" href="#"><i >add</i></a>
+
+                        <!--Avatar-->
+                        <div class="avatar">
+                          <a href="#">
+                            <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                          </a>
+                          <i class="owner"></i>
+                        </div>
+
+                        <div class="card-block">
+                            <!--Name-->
+                            <h3 class="card-title">
+                              <a href="#">الفزياء المبسطة</a>
+                            </h3>
+                            <h4>الموسيقي</h4>
+                            <!--Quotation-->
+                            <a href="#" class="btn btn-default">عرض المساحة</a>
+                        </div>
+
+                        <!-- card footer -->
+                        <div class="card-footer">
+
+                          <div class="space-owner">
+                            <img src="img/user.jpg" alt="" />
+                            <div>
+                              <span>إنشئ بواسطة</span>
+                              <h3>Vincent Sims</h3>
+                            </div>
+                          </div>
+
+                          <div class="space-followers">
+                            <ul>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Omar Ali"/></li>
+                              <li><img src="img/user.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Khaled Yosry"/></li>
+                            </ul>
+                            <span>١١+</span>
+                          </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+
+              </div>
+              <!--/.tab 1-->
+
+              <!--tab 2-->
+              <div class="tab-pane fade" id="panel52" role="tabpanel">
+
+                <div id="user-info-edit" class="col-lg-8 col-sm-12 pull-lg-2">
+
+                  <div class="view-item">
+                    <div class="item">
+                      <i class="material-icons">person</i>
+                      <h2>اسم المستخدم</h2>
+                      <h3>Omar Ali</h3>
+                    </div>
+
+                    <div class="item birth-date-change">
+                      <h2>تاريخ الميلاد</h2>
+                      <h3 class="text">25-7-1994</h3>
+                      <a class="save" href="#">حفظ</a>
+                      <a  class="edit" href="#">تغير</a>
+                      <input class="editable" type="text" name="" value="25-7-1994">
+                    </div>
+
+                    <div class="item">
+                      <h2>النوع</h2>
+                      <h3>ذكر</h3>
+                    </div>
+
+                    <div class="item">
+                      <h2>البلد</h2>
+                      <h3>مصر</h3>
+                    </div>
+                  </div>
+
+                  <div class="view-item">
+                    <div class="item">
+                      <i class="material-icons">perm_contact_calendar</i>
+                      <h2>رقم الهاتف</h2>
+                      <h3>+8 7788 443 334</h3>
+                    </div>
+
+                    <div class="item mail-change">
+                      <h2>البريد الاكتروني</h2>
+                      <h3 class="text">Jhony_1992@gmail.com</h3>
+                      <a class="save" href="#">حفظ</a>
+                      <a  class="edit" href="#">تغير</a>
+                      <input class="editable" type="email" name="" value="Jhony_1992@gmail.com">
+                    </div>
+                  </div>
+
+                  <div class="view-item">
+                    <div class="item">
+                      <i class="material-icons">work</i>
+                      <h2>المهنة</h2>
+                      <h3>طالب</h3>
+                    </div>
+
+                    <div class="item interest-change">
+                      <h2>اهتمامات</h2>
+                      <h3 class="text">
+                        <span>تصميم</span>,
+                        <span>علوم</span>,
+                        <span>رياضيات</span>
+                      </h3>
+                      <a class="save" href="#">حفظ</a>
+                      <a  class="edit" href="#">تغير</a>
+                      <input class="editable" type="text" name="" value="تصميم, علوم, رياضيات">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--/.tab 2-->
+
+              <!--tab 3-->
+              <div class="tab-pane fade" id="panel53" role="tabpanel">
+
+                  <div class="col-lg-8 col-sm-12 pull-lg-2">
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="user-followers clearfix">
+
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                        <h3>John Doe</h3>
+
+                        <!--Trigger-->
+                        <button class="dropdown-toggle disabled" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <!-- <a class="dropdown-item" href="#">تعديل المساحة <i class="material-icons">mode_edit</i></a> -->
+                            <a class="dropdown-item" href="#">مسح المساحة <i class="material-icons">delete</i></a>
+                        </div>
+
+                    </div>
+
+                  </div>
+
+              </div>
+              <!--/.tab 3-->
+
+          </div>
+          <!-- Tab panels -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer>
+
+      <div class="row">
+
+          <div class="col-lg-6">
+            <p class="float-lg-right">
+              Copyright © 2016
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="icon-logo-footer icon-sprite" href="#"></a>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <!-- footer -->
+
+  </div>
+
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- equal height -->
+  <script src="js/jquery.equalheights.js"></script>
+  <script>
+    $('.equalheightContainer .equal-height').equalHeights();
+  </script>
+
+  <!-- menu -->
+  <script src="js/classie.js"></script>
+  <script src="js/menu.js"></script>
+
+  <!-- profile edits -->
+  <script src="js/profile-edit.js"></script>
+
+
+</body>
+
+</html>

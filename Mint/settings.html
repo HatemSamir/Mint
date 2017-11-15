@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Mint - Settings</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-rtl.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- custom styles  -->
+    <link href="css/style-rtl.css" rel="stylesheet">
+    <link href="css/responsive-rtl.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="menu-wrap">
+    <div class="user-info">
+      <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+      <h2>Jhone Doe</h2>
+      <span>heyfromjonathan@gmail.com</span>
+    </div>
+    <nav>
+        <a class="clearfix" href="#"><i class="material-icons">dashboard</i><span>لوحة التحكم</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">account_circle</i><span>الصفحة الشخصية</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">settings</i><span>الاعدادت</span></a>
+        <a class="clearfix" href="#"><i class="material-icons mint-logo"></i><span>عن مينت</span></a>
+        <a class="clearfix logout" href="#"><i class="material-icons">&#xE5DD;</i><span>تسجيل الخروج</span></a>
+    </nav>
+  </div>
+
+  <div class="content-wrap">
+
+    <header class="extend extend-alt">
+
+        <a class="icon-logo icon-sprite" href="#"></a>
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-6 col-sm-6">
+              <button class="menu-button" id="open-button">Open Menu</button>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+
+              <div class="btn-group">
+
+                  <a href="#" id="userDropDown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                    <span>Omar Aly</span>
+                    <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                  </a>
+
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">
+                        تسجيل الخروج
+                        <i class="exit-icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                <hr>
+              </div>
+          </div>
+
+          <div class="row inner-header">
+
+            <div class="col-lg-6 col-sm-4">
+              <h2>الاعدادت</h2>
+            </div>
+
+            <div class="col-lg-6 col-sm-8">
+            </div>
+
+          </div>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-lg-2 pull-md-2 pull-sm-0 pull-xs-0">
+          <div id="settings">
+
+            <div class="item-sett">
+                <i class="material-icons">lock</i>
+                <h2>كلمة المرور</h2>
+                <h3>
+                  <span>************</span>
+                  <a data-toggle="modal" data-target="#myModal" href="#">تغير</a>
+                </h3>
+            </div>
+
+            <div class="item-sett">
+                <i class="material-icons">public</i>
+                <h2>اللغة</h2>
+                <h3>
+                  <span>العربية</span>
+                  <a data-toggle="modal" data-target="#myModal-2" href="#">تغير</a>
+                </h3>
+            </div>
+
+            <div class="item-sett social-media">
+                <i class="material-icons">share</i>
+                <h2>مواقع التواصل الاجتماعي</h2>
+                <h3>
+                  <span>Facebook</span>
+                  <a href="#">توصيل</a>
+                </h3>
+                <h3>
+                  <span>Twitter</span>
+                  <a href="#">قطع الاتصال</a>
+                </h3>
+                <h3>
+                  <span>+Google</span>
+                  <a href="#">توصيل</a>
+                </h3>
+            </div>
+
+            <div class="item-sett">
+                <i class="material-icons">settings</i>
+                <h2>اعدادات المستخدم</h2>
+                <ul>
+                  <li class="list-group-item clearfix">
+                      <form>
+                        <div class="material-switch pull-left">
+                          <input id="allow-to-participate" name="someSwitchOption001" type="checkbox" class="disabled"/>
+                          <label for="allow-to-participate" class="label-default"></label>
+                        </div>
+                        <div class="list-group-content">
+                          <span>السماح بالمتابعة</span>
+                        </div>
+                      </form>
+                  </li>
+                  <li class="list-group-item clearfix">
+                      <form>
+                        <div class="material-switch pull-left">
+                            <input id="allow-to-leave" name="someSwitchOption001" type="checkbox" class="disabled"/>
+                            <label for="allow-to-leave" class="label-default"></label>
+                        </div>
+                        <div class="list-group-content">
+                          <span>السماح باظهار اصدقائي</span>
+                        </div>
+                      </form>
+                  </li>
+                </ul>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer>
+
+      <div class="row">
+
+          <div class="col-lg-6">
+            <p class="float-lg-right">
+              Copyright © 2016
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="icon-logo-footer icon-sprite" href="#"></a>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <!-- footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-password-reset" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4>تغير كلمة المرور</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <input type="password" class="form-control" placeholder="كلمة المرور القديمة">
+                  <input type="password" class="form-control" placeholder="كلمة المرور الجديدة">
+                  <input type="password" class="form-control" placeholder="تأكيد كلمة المرور">
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">الغاء</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">موافق</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- end modal-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-settings-1" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4>تغير اللغة</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+
+                  <div class="md-select">
+                      <select id="select-categories" class="select">
+                          <option value="العربية">العربية</option>
+                          <option value="option2">option2</option>
+                          <option value="option3">option3</option>
+                          <option value="option4">option4</option>
+                      </select>
+                  </div>
+
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">الغاء</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">موافق</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- end modal-->
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- menu -->
+  <script src="js/classie.js"></script>
+  <script src="js/menu.js"></script>
+
+  <!-- select -->
+  <script src="js/select.js"></script>
+
+
+</body>
+
+</html>

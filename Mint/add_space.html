@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Mint - Add space</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-rtl.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- custom styles  -->
+    <link href="css/style-rtl.css" rel="stylesheet">
+    <link href="css/responsive-rtl.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="menu-wrap">
+    <div class="user-info">
+      <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+      <h2>Jhone Doe</h2>
+      <span>heyfromjonathan@gmail.com</span>
+    </div>
+    <nav>
+        <a class="clearfix" href="#"><i class="material-icons">dashboard</i><span>لوحة التحكم</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">account_circle</i><span>الصفحة الشخصية</span></a>
+        <a class="clearfix" href="#"><i class="material-icons">settings</i><span>الاعدادت</span></a>
+        <a class="clearfix" href="#"><i class="material-icons mint-logo"></i><span>عن مينت</span></a>
+        <a class="clearfix logout" href="#"><i class="material-icons">&#xE5DD;</i><span>تسجيل الخروج</span></a>
+    </nav>
+  </div>
+
+  <div class="content-wrap">
+
+    <!-- header -->
+    <header class="extend">
+
+      <a class="icon-logo icon-sprite" href="#"></a>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 col-sm-6">
+            <button class="menu-button" id="open-button">Open Menu</button>
+          </div>
+
+          <div class="col-lg-6 col-sm-6">
+
+            <div class="btn-group">
+
+                <a href="#" id="userDropDown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">keyboard_arrow_down</i>
+                  <span>Omar Aly</span>
+                  <img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-2.jpg" class="rounded-circle img-responsive">
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      تسجيل الخروج
+                      <i class="exit-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+              <hr>
+            </div>
+        </div>
+
+        <div class="row inner-header">
+
+          <div class="col-lg-6 col-sm-4">
+            <a class="back" href="#"><i class="material-icons">clear</i></a>
+            <h2>انشاء مساحة التعليمية</h2>
+          </div>
+
+          <div class="col-lg-6 col-sm-8">
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- add space -->
+    <div id="addSpace" class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12 pull-lg-3 pull-md-1 pull-sm-0 pull-xs-0">
+          <form id="addSpaceForm" action="#">
+            <h3>معلومات المساحة</h3>
+            <fieldset>
+
+              <div class="md-form">
+                  <label for="space-title">عنوان المساحة</label>
+                  <input type="text" id="space-title" class="form-control">
+              </div>
+
+              <div class="md-form">
+                  <label for="space-descrip">وصف المساحة</label>
+                  <input type="text" id="space-descrip" class="form-control validate">
+              </div>
+
+              <div class="md-form">
+
+                <div class="md-select">
+                    <label for="select-categories">التصنييف</label>
+                    <select id="select-categories" class="select">
+                        <option value="">اختر التصنيف</option>
+                        <option value="option1">option1</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <option value="option4">option4</option>
+                    </select>
+                </div>
+
+              </div>
+
+              <div class="md-form">
+                <label id="addTag" for="tags">الكلمات الدلالية</label>
+                <input type="text" id="tags" data-role="tagsinput" />
+              </div>
+
+            </fieldset>
+
+            <h3>صورة المساحة</h3>
+            <fieldset>
+
+              <div class="file-upload">
+                <div class="image-upload-wrap">
+                  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                  <div class="drag-text">
+                    <span class="custom-span">+</span>
+                    <h3>انقر هنا لإضافة صورة</h3>
+                  </div>
+                </div>
+                <div class="file-upload-content">
+                  <img class="file-upload-image" src="#" alt="your image" />
+                  <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image"><i class="material-icons">clear</i>ازالة الصورة</button>
+                  </div>
+                </div>
+                <p class="img-info">حجم الصورة لا يمكن أن يكون أصغر من   ١٠٠٠x٥٠٠</p>
+              </div>
+
+            </fieldset>
+
+            <h3>إعدادت المساحة</h3>
+            <fieldset>
+              <h3>اعدادات الخصوصية</h3>
+              <ul>
+                <li class="list-group-item clearfix">
+                    <div class="material-switch pull-right">
+                        <input id="show-members" name="someSwitchOption001" type="checkbox"/>
+                        <label for="show-members" class="label-default"></label>
+                    </div>
+                    <div class="list-group-content">
+                      <span>أظهر الاعضاء</span>
+                      <p>
+                        ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                      </p>
+                    </div>
+                </li>
+              </ul>
+              <div class="radio">
+                <label class="i-checks">
+                  <input type="radio" value="0" name="a">
+                    <i></i>
+                    <div>
+                      <h4><span class="material-icons">public</span>عام</h4>
+                      <p>
+                        تظهر المساحة العامة في البحث.
+                        يمكن الانضمام إلى المساحة من الراغبين.
+                        يمكن للأعضاء دعوة غير الأعضاء للمساحة
+                      </p>
+                    </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label class="i-checks">
+                  <input type="radio" value="1" name="a">
+                  <i></i>
+                  <div>
+                      <h4><span class="material-icons">lock</span>خاص</h4>
+                      <p>
+                        لا تظهر المساحة الخاصة في البحث.
+                        يمكن لغير الأعضاء المشاركة إذا تم دعوتهم ووافق المالك على طلب العضوية.
+                      </p>
+                    </div>
+                </label>
+              </div>
+
+              <h3>اعدادات المساحة الخاصة</h3>
+
+              <ul>
+                <li class="list-group-item clearfix">
+                    <div class="material-switch pull-right">
+                        <input id="allow-to-participate" name="someSwitchOption001" type="checkbox" class="disabled"/>
+                        <label for="allow-to-participate" class="label-default"></label>
+                    </div>
+                    <div class="list-group-content">
+                      <span>السماح بالمشاركة</span>
+                      <p>
+                        ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                      </p>
+                    </div>
+                </li>
+                <li class="list-group-item clearfix">
+                    <div class="material-switch pull-right">
+                        <input id="allow-to-leave" name="someSwitchOption001" type="checkbox" class="disabled"/>
+                        <label for="allow-to-leave" class="label-default"></label>
+                    </div>
+                    <div class="list-group-content">
+                      <span>السماح بالمغادرة</span>
+                      <p>
+                        ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                      </p>
+                    </div>
+                </li>
+              </ul>
+            </fieldset>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer>
+
+      <div class="row">
+
+          <div class="col-lg-6">
+            <p class="float-lg-right">
+              Copyright © 2016
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="icon-logo-footer icon-sprite" href="#"></a>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <!-- footer -->
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- menu -->
+  <script src="js/classie.js"></script>
+  <script src="js/menu.js"></script>
+
+  <!-- multi step form -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+  <script type="text/javascript" src="js/jquery.steps.min.js"></script>
+  <script type="text/javascript" src="js/add.space.js"></script>
+
+  <!-- switch button -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('input:radio[name=a]').click(function() {
+          var checkval = $(this).val();
+          $('.disabled').prop('disabled', !(checkval == '1'));
+      });
+    });
+  </script>
+
+  <!-- upload image -->
+  <script src="js/image-upload.js"></script>
+
+  <!-- tags -->
+  <script src="js/bootstrap-tagsinput.min.js"></script>
+
+  <!-- select -->
+  <script src="js/select.js"></script>
+
+</body>
+
+</html>

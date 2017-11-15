@@ -1,0 +1,692 @@
+html {
+  direction: ltr;
+}
+
+/*header*/
+
+.container footer p,
+.icon-logo,
+.inner-page .inner-header .tabs-wrapper .nav-item,
+.inner-page .inner-header .space-followers ul li,
+.dropdown .dropdown-menu i,
+header .btn-group span,
+header .btn-group .dropdown-toggle i,
+#learningSpaces .card .card-footer .space-owner,
+#singleSpace .card .card-footer .space-owner,
+#learningSpaces .card .card-footer .space-owner img,
+#singleSpace .card .card-footer .space-owner img,
+.btn.download .text,
+.sign-in .clearfix a,
+#discussionList .list-item p,
+#discussionList .new-discussion div,
+#discussionSingle #discussion .bottom img,
+#discussionSingle #discussion .bottom h1,
+#discussionSingle #addComment input,
+header.blk .back,
+#addDiscuss #adddiscussForm .add-file > div,
+header .tabs-wrapper .nav-item,
+.user-followers img,
+.user-followers h3 {
+  float: left !important;
+}
+
+.icon-logo-footer,
+.inner-page .inner-header .space-followers ul,
+.inner-page .inner-header .space-followers span,
+.inner-page .inner-header .dropdown,
+.inner-header a,
+header .btn-group,
+#singleSpace .card .card-mask .dropdown,
+.sign-in .box .col-lg-10.col-md-9,
+.btn.download,
+.sign-in .btn,
+#learningSpaces .card .card-footer .space-followers ul,
+#singleSpace .card .card-footer .space-followers ul,
+#learningSpaces .card .card-footer .space-followers span,
+#singleSpace .card .card-footer .space-followers span,
+#learningSpaces .card .card-footer .space-followers ul li,
+#singleSpace .card .card-footer .space-followers ul li,
+#discussionSingle #discussion .bottom a,
+#discussionSingle #discussionComments .comments .dropdown,
+#discussionSingle #discussionComments .likes i,
+#discussionSingle #discussionComments .comments .active .save,
+#discussionList .new-discussion a,
+#settings h3 a,
+#settings .list-group-item .material-switch,
+.user-followers .dropdown-toggle {
+  float: right !important;
+}
+
+.inner-header h2,
+.inner-page .inner-header h3,
+#learningSpaces .card .card-footer .space-owner span,
+#singleSpace .card .card-footer .space-owner span,
+.modal-header h4 {
+  text-align: left;
+}
+
+.modal-footer,
+#discussionSingle #discussionComments .top,
+.form-button {
+  text-align: right;
+}
+
+.inner-page .inner-header h3 i {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.inner-page .inner-header .space-followers ul .first i {
+  left: auto;
+  right: -5px;
+}
+
+.inner-page .inner-header a.fav {
+  right: 11px;
+  left: auto;
+}
+
+.inner-page .inner-header .dropdown .dropdown-menu {
+  left: auto;
+  right: 2px;
+}
+
+.inner-page .inner-header .dropdown button {
+  margin: 0
+}
+
+.dropdown .dropdown-menu a {
+  padding: 4px 29px 4px 10px;
+}
+
+.dropdown .dropdown-menu i {
+  margin-right: 8px;
+}
+
+header .btn-group span{
+  margin-right: 9px;
+}
+
+header .btn-group .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+header .btn-group .dropdown-menu .dropdown-item {
+  padding: 6px 39px 7px 2px;
+  text-align: right;
+}
+
+header .btn-group .dropdown-menu .exit-icon {
+  left: 10px;
+  right: auto;
+  transform: rotate(180deg);
+}
+
+.inner-header h4 {
+  margin: 0 0 0 31px;
+}
+
+.menu-wrap {
+  right: auto;
+  left: 0;
+  -webkit-transform: translate3d(-255px, 0, 0);
+  -moz-transform: translate3d(-255px, 0, 0);
+  -ms-transform: translate3d(-255px, 0, 0);
+  -o-transform: translate3d(-255px, 0, 0);
+  transform: translate3d(-255px, 0, 0);
+}
+
+.menu-button::before {
+  left: 15px;
+  right: auto;
+}
+
+.menu-wrap a i,
+.menu-wrap a span {
+  float: left;
+  margin: 0 30px 0 0;
+}
+
+
+/*single space*/
+
+#singleSpace .card .card-mask h4 {
+  left: 15px;
+  right: auto;
+}
+
+#singleSpace .card .card-mask a.fav {
+  right: 35px;
+  position: absolute;
+  left: auto;
+}
+
+#singleSpace .card a.fav i {
+  left: auto;
+}
+
+#singleSpace .card .dropdown .dropdown-menu {
+  right: 16px;
+  left: auto;
+}
+
+#singleSpace .card .card-block .display {
+  right: 15px;
+  left: auto;
+}
+#singleSpace .card .card-block .display i,
+.logout i {
+  transform: rotate(180deg);
+}
+
+#singleSpace .card h3 {
+  text-align: left;
+  margin: 0 20px 0 15px;
+}
+
+#learningSpaces .card .card-footer .space-owner img,
+#singleSpace .card .card-footer .space-owner img {
+  margin: 0 5px 0 0;
+}
+
+#learningSpaces .card .dropdown .dropdown-menu a,
+#singleSpace .card .dropdown .dropdown-menu a {
+  padding: 4px 29px 4px 10px
+}
+
+#singleSpace .card .dropdown .dropdown-menu i {
+  margin: 0 8px 0 0;
+}
+
+#discussionList .new-discussion {
+  margin: 0 0 30px 120px;
+}
+
+#discussionList .list-item .list-content {
+  margin: 0 0 0 120px;
+}
+
+#discussionList .list-item img {
+  right: auto;
+  left: 45px;
+}
+
+#discussionList .list-item span {
+  left: auto;
+  right: 75px;
+}
+
+#discussionList .list-item h4 {
+  float: right;
+  border-right: none;
+  border-left: solid 1px rgba(0, 0, 0, 0.12);
+  padding: 0 0 0 15px;
+}
+
+#aboutSPace .clearfix {
+  padding: 0 0 0 70px;
+}
+
+#aboutSPace .creator-name img {
+  right: auto;
+  left: 0;
+}
+
+#aboutSPace i {
+  right: auto;
+  left: 10px;
+}
+
+#learningSpaces .card .card-footer .space-followers span,
+#singleSpace .card .card-footer .space-followers span {
+  margin-top: 6px;
+}
+
+#learningSpaces .card a.fav i {
+  right: 12px;
+  left: auto;
+}
+
+#learningSpaces .card .dropdown {
+  width: 25px;
+}
+
+#learningSpaces .card .dropdown .dropdown-menu {
+  left: 19px;
+  right: auto;
+}
+
+.inner-header a.btn {
+  margin: 5px 0px 5px 10px;
+}
+
+#learningSpaces .card .dropdown .dropdown-menu a,
+#singleSpace .card .dropdown .dropdown-menu a {
+  padding: 4px 29px 4px 30px;
+}
+
+#learningSpaces .card .dropdown .dropdown-menu i,
+#singleSpace .card .dropdown .dropdown-menu i {
+  position: absolute;
+  left: 7px;
+  margin: 0;
+}
+
+/*login - password*/
+.btn.download .material-icons {
+  float: left;
+  margin: 10px 8px 0 12px;
+}
+
+.error-block i {
+  right: 25px;
+  left: auto;
+}
+
+.sign-in .reveal {
+  right: -50px;
+}
+
+.icon-arrow {
+  float: left;
+  margin: 1px 12px 0 -3px;
+  transform: rotate(0deg);
+}
+
+
+/*discussion single*/
+#discussionSingle #discussion .top img {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#discussionSingle #discussion .top .date {
+  right: 25px;
+  left: auto;
+}
+
+#discussionSingle #discussion .bottom h1 {
+  margin: 20px 0 0 20px;
+}
+
+#discussionSingle #discussionComments .top h2 {
+  float: left;
+  margin: 0;
+}
+
+#discussionSingle #discussionComments .comments img {
+  float: left;
+  margin: 0 16px 0 7px;
+}
+
+#discussionSingle #discussionComments .comments p, #discussionSingle #discussionComments .comments .text {
+  float: left;
+  margin: 0 0 0 64px;
+}
+
+#discussionSingle #discussionComments .comments .date i {
+  float: left;
+  margin: 3px 5px 0px 0px;
+}
+
+#discussionSingle #discussionComments .comments .date {
+  margin: 2px 0 0 0;
+}
+
+#discussionSingle #discussionComments .likes {
+  float: right;
+  margin: 1px 10px 0 0;
+}
+
+#discussionSingle #discussionComments .likes span {
+  margin: 0 10px 0 2px;
+}
+
+#discussionSingle #discussionComments .comments .dropdown .dropdown-menu {
+  right: 15px;
+  left: auto;
+}
+
+#discussionSingle #discussionComments .comments .editable {
+  float: left;
+  margin: 0 0 1rem 64px;
+  text-align: left;
+}
+
+#discussionSingle #addComment {
+  padding: 0 15px 0 73px;
+}
+
+#discussionSingle #addComment button {
+  float: right;
+  margin: 15px 8px 0 0;
+  transform: rotate(180deg);
+}
+
+#discussionSingle #addComment textarea {
+  float: left;
+}
+
+#discussionSingle #discussionComments .comments .save {
+  margin-right: 10px;
+}
+
+.md-select .options li {
+  padding: 6px 0 6px 16px;
+}
+
+.selectize-control.single .selectize-input::after {
+  right: 5px;
+}
+
+header.blk .back {
+  margin: 3px 6px -3px -3px;
+  transform: rotate(180deg);
+}
+
+.content-blk header .inner-header h2 {
+  padding: 0 0 20px 30px;
+}
+
+.content-blk .dropdown .dropdown-menu a {
+  position: relative;
+  padding: 4px 29px 4px 40px;
+}
+
+.content-blk .dropdown .dropdown-menu a i {
+  position: absolute;
+  margin: 0;
+  left: 15px;
+  top: 5px;
+}
+
+#discussionList .pagination li a {
+  font-weight: 300;
+  color: #212121;
+  margin: 0 10px 0 0;
+}
+
+#discussionList .pagination li.active a {
+  font-weight: 300;
+  color: #fff;
+  margin: 0 10px 0 0;
+  background: #a8a8a8;
+  border-radius: 50px;
+  width: 25px;
+  display: inline-block;
+}
+
+/*add space*/
+
+header .inner-header .back {
+  float: left !important;
+  margin: 3px 6px -3px -3px;
+  transform: rotate(180deg);
+}
+
+header.blk .inner-header .back {
+  margin: 3px 6px -3px -3px;
+}
+
+#addSpace .steps ul li:first-child,
+#addContent .steps ul li:first-child {
+  padding: 0;
+}
+
+#addSpace .steps ul li:last-child,
+#addContent .steps ul li:last-child {
+  padding-left: 6%;
+}
+
+#addSpace .steps ul li:before,
+#addContent .steps ul li:before {
+  left: -8px;
+  right: auto;
+}
+
+.md-select .styledSelect:after {
+  right: 5px;
+  left: auto;
+}
+
+#addSpace .actions ul,
+#addContent .actions ul {
+  text-align: right;
+  margin: 0px 20px 8px 0px;
+}
+
+#addSpace .steps ul li a span,
+#addContent .steps ul li a span {
+  margin: 0 5px 0 0;
+}
+
+.list-group-content {
+  padding: 0 0 0 55px;
+}
+
+.material-switch,
+.i-checks input[type="radio"] + i, .i-checks input[type="radio"] + i:before {
+  float: left;
+}
+
+.material-switch > label::after {
+  left: 0px;
+}
+
+.i-checks div {
+  margin: -25px 0px 13px 38px;
+}
+
+#addSpace #addSpaceForm .content .material-icons {
+  margin: 0px 8px 0 -2px;
+  float: left;
+}
+
+.i-checks {
+  padding: 0;
+}
+
+#addSpace .actions li:last-child a, #addContent .actions li:last-child a {
+  margin: 0 -10px 2px 20px;
+}
+
+#discussionList .list-item p {
+  line-height: 1.4;
+}
+
+#learningSpaces .card .card-footer .space-owner h3 {
+  text-align: left;
+}
+
+
+/*add discussion*/
+.extend h3 {
+  margin: 0 0 0 28px;
+}
+
+#addDiscuss #adddiscussForm .add-file img {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#addDiscuss #adddiscussForm .add-file .md-select {
+  margin: 20px 0 0 10px;
+}
+
+#discussionComments .dropdown .dropdown-menu a {
+  position: relative;
+  padding-left: 37px;
+}
+
+#discussionComments .dropdown .dropdown-menu a i {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  margin-top: 0
+}
+
+.btn.download {
+  height: 46px;
+  width: auto;
+  padding: 0 15px 0 0 ;
+}
+
+#addContent #addContentForm .image-title-wrap button {
+  text-align: left;
+  width: 100%;
+}
+
+#addContent #addContentForm .image-title-wrap button .material-icons {
+  float: left;
+  margin: 4px 4px 0 0 ;
+}
+
+
+/*  about  & settings & profile */
+#about {
+  padding: 32px 24px 25px 83px;
+}
+
+#about .info {
+  right: auto;
+  left: 28px;
+}
+
+#about .version .mint-logo {
+  right: auto;
+  left: -52px;
+}
+
+#settings {
+  padding: 90px 0 60px 20px;
+}
+
+#settings .material-icons {
+  left: -60px;
+  right: auto;
+}
+
+header .profile-info,
+header .status {
+  padding: 0 0 0 120px;
+}
+
+header .profile-info span {
+  margin: 0 10px 0 0;
+}
+
+header .profile-picture .p-image {
+  left: 66px;
+  right: auto;
+}
+
+header .tabs-wrapper .classic-tabs {
+  padding: 0 0 0 135px;
+}
+
+.user-followers h3 {
+  margin: 0 0 0 15px;
+}
+
+#user-info-edit {
+  padding: 0 0 0 50px;
+}
+
+#user-info-view .item i, #user-info-edit .item i {
+  left: -60px;
+  right: auto;
+}
+
+#user-info-edit .item a {
+  left: auto;
+  right: 12px;
+}
+
+#user-info-edit .item input {
+  text-align: left;
+}
+
+#user-info-view, #user-info-edit {
+  padding: 32px 32px 25px 92px;
+}
+
+.spaces .card a.fav i {
+    left: auto;
+    right: 12px;
+}
+
+.spaces .card .dropdown .dropdown-menu {
+  left: 14px;
+  right: auto;
+}
+
+.spaces .card .dropdown .dropdown-menu a {
+  padding: 4px 29px 4px 10px;
+  text-align: right;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:991px) {
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  header.extend .col-lg-6.col-sm-4 {
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  header .row.inner-header .col-sm-4, .row.inner-header .col-sm-8 {
+    float: left;
+  }
+
+  header .row.inner-header .col-sm-4 {
+    width: 59%;
+  }
+
+  header .row.inner-header .col-sm-8 {
+    width: 41%;
+  }
+
+}
+
+
+@media screen and (max-width:576px) {
+  header .row .col-lg-6.col-sm-6 {
+    float: left;
+  }
+
+  header.inner-page .inner-header .space-followers span {
+    margin: 5px 0 0 -6px;
+  }
+
+  header.inner-page .inner-header .space-followers ul {
+    padding-right: 0;
+  }
+
+  header .inner-header h2, header .inner-header h4 {
+    text-align: left;
+  }
+
+  header .col-lg-6.col-sm-6.col-xs-6:first-child {
+    width: 60%;
+  }
+
+  header .col-lg-6.col-sm-6.col-xs-6:last-child {
+    width: 40%;
+  }
+
+}
